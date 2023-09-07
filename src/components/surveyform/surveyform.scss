@@ -1,0 +1,91 @@
+$whiteColor: #ffffff;
+$blackColor: #000000;
+$largeScreenFontSize: 28px;
+$smallScreenFontSize: 18px;
+$borderColor : #00000016;
+$buttonColor:#F3F4FA;
+
+.wrapper {
+    width: 100% !important;
+    padding: 0 20% !important;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-text {
+    color: $blackColor;
+    font-size: $largeScreenFontSize;
+    padding: 36px 0;
+    text-align: left;
+}
+
+
+.button-wrapper {
+    gap: 24px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.button {
+    width: 100%;
+    background-color: $buttonColor;
+    color: $blackColor;
+    padding: 10px 20px;
+    border-color: $borderColor;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: left;
+    font-size: $largeScreenFontSize;
+    transition: background-color 0.2s ease-in-out;
+
+    &:hover {
+        background-color: $blackColor;
+        color: $whiteColor;
+
+    }
+}
+
+.next-wrapper {
+    margin-top: 24px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.fa-arrow-right {
+    color: $whiteColor;
+}
+
+@media (max-width: 479px) {
+    .wrapper {
+        padding: 0 20px !important;
+    }
+
+    .header-text {
+        font-size: $smallScreenFontSize;
+        margin: 10px auto !important;
+    }
+
+
+    .button {
+        width: 100%;
+        background-color: $buttonColor;
+        color: $blackColor;
+        padding: 10px 20px;
+        border-color: $borderColor;
+        border-radius: 5px;
+        cursor: pointer;
+        text-align: left;
+        font-size: $smallScreenFontSize;
+        transition: background-color 0.2s ease-in-out;
+
+        &:hover {
+            background-color: $blackColor;
+            color: $whiteColor;
+
+        }
+    }
+}

@@ -1,0 +1,27 @@
+$blackColor: #000000;
+
+.navbar {
+    width: 100vw;
+    height: 130px;
+    background-color: $blackColor;
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navbar-brand {
+    margin: 0 auto;
+}
+
+.navbar-logo {
+    min-width: 100px !important;
+    height: 130px;
+}
+

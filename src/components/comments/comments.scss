@@ -1,0 +1,99 @@
+$buttonColor: #D62B1E;
+$blackColor: #000000;
+$largeScreenFontSize: 28px;
+$smallScreenFontSize: 18px;
+$borderColor : #00000016;
+
+
+
+.wrapper-comment {
+    width: 100% !important;
+    padding: 0 20% !important;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header-text {
+    color: $blackColor;
+    font-size: $largeScreenFontSize;
+    padding: 36px 0;
+    text-align: left;
+  }
+
+  
+.input {
+  width: calc(100% - 0px);
+  height: 170px !important;
+  border-radius: 5px;
+  background-color: #EAEAEA;
+  color: $blackColor;
+  padding: 10px 10px;
+  font-size: $largeScreenFontSize;
+  border-color: $borderColor;
+}
+
+
+.back-wrapper {
+  width: 100%;
+  display: flex;
+  margin-top: 36px;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.button-next {
+  width: 100px;
+  background-color: $buttonColor;
+  color: $blackColor;
+  padding: 10px 20px;
+  border-color: $borderColor;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+
+  &:hover {
+    background-color: $buttonColor;
+
+  }
+}
+
+.fa-arrow-left{
+  color: white;
+}
+
+.fa-arrow-right{
+  color: white;
+}
+
+@media (max-width: 1300px) {
+  .wrapper-comment{
+    padding: 0 100px !important;
+  }
+  
+}
+
+  @media (max-width: 479px) {
+
+    .wrapper-comment{
+      padding: 0 20px !important;
+    }
+
+    .header-text {
+      font-size: $smallScreenFontSize;
+      margin: 10px auto !important;
+    }
+
+    .input {
+      width: calc(100% - 0px);
+      height: 70px !important;
+      border-radius: 5px;
+      background-color: #EAEAEA;
+      color: $blackColor;
+      font-size: $smallScreenFontSize;
+    }
+    .button-next {
+      width:60px;
+      background-color: $buttonColor;   
+    }
+  }

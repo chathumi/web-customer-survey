@@ -1,0 +1,13 @@
+.excellent-maintxt {
+    text-align: center;
+    margin-top: 400px;
+    font-size: 28px;
+}
+
+@media (max-width: 479px) {
+    .excellent-maintxt {
+        text-align: center;
+        margin-top: 200px;
+        font-size: 18px;
+    }
+}
